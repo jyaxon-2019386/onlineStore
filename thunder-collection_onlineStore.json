@@ -1,0 +1,273 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "onlineStore",
+    "dateExported": "2024-02-23T02:53:57.813Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "3a79d8c2-3fc7-4175-a689-7a4e35bebc76",
+            "name": "ADMIN",
+            "containerId": "",
+            "created": "2024-02-22T23:20:02.974Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "9ad649ab-25fc-4982-be81-d8dbdeb8c872",
+            "name": "CLIENT",
+            "containerId": "",
+            "created": "2024-02-22T23:20:15.453Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "4e468d1e-4f4a-41a9-8723-222e7760d703",
+            "name": "PRODUCT",
+            "containerId": "3a79d8c2-3fc7-4175-a689-7a4e35bebc76",
+            "created": "2024-02-22T23:20:28.093Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "2f818340-9c6c-43ed-a282-e06c052bbd06",
+            "name": "CATEGORY",
+            "containerId": "3a79d8c2-3fc7-4175-a689-7a4e35bebc76",
+            "created": "2024-02-22T23:20:39.982Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "2ab9d9cf-8a93-40e1-afbb-9b70713a82ed",
+            "colId": "21dd1d2c-921f-4476-b451-bf7d71f59f4a",
+            "containerId": "4e468d1e-4f4a-41a9-8723-222e7760d703",
+            "name": "SAVE_PRODUCT",
+            "url": "/product/save",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-22T23:20:54.814Z",
+            "modified": "2024-02-23T00:05:43.508Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Huawei"
+                    },
+                    {
+                        "name": "price",
+                        "value": "6000"
+                    },
+                    {
+                        "name": "category",
+                        "value": "Electronico"
+                    },
+                    {
+                        "name": "stock",
+                        "value": "0"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "8d5a27e6-03e1-4a68-8f83-c8f7c0f4a6f4",
+            "colId": "21dd1d2c-921f-4476-b451-bf7d71f59f4a",
+            "containerId": "4e468d1e-4f4a-41a9-8723-222e7760d703",
+            "name": "GET_PRODUCT",
+            "url": "/product/get",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-22T23:24:05.995Z",
+            "modified": "2024-02-23T00:17:37.158Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0eda9c0d-3235-4849-83db-8e4807700407",
+            "colId": "21dd1d2c-921f-4476-b451-bf7d71f59f4a",
+            "containerId": "4e468d1e-4f4a-41a9-8723-222e7760d703",
+            "name": "UPDATE_PRODUCT",
+            "url": "/product/update/65d7d7795c293c279ce577f8",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-22T23:26:44.788Z",
+            "modified": "2024-02-22T23:27:10.094Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Televisor LG"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a6397b5f-7faf-4b2e-b385-71335828d963",
+            "colId": "21dd1d2c-921f-4476-b451-bf7d71f59f4a",
+            "containerId": "4e468d1e-4f4a-41a9-8723-222e7760d703",
+            "name": "DELETE_PRODUCT",
+            "url": "/product/delete/65d7d7795c293c279ce577f8",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-02-22T23:27:49.100Z",
+            "modified": "2024-02-22T23:28:05.530Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fb28cdc2-0ffc-4402-b4d1-8d4a932c3d9f",
+            "colId": "21dd1d2c-921f-4476-b451-bf7d71f59f4a",
+            "containerId": "4e468d1e-4f4a-41a9-8723-222e7760d703",
+            "name": "SEARCH_PRODUCT",
+            "url": "/product/search",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-22T23:28:30.640Z",
+            "modified": "2024-02-22T23:29:15.347Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "search",
+                        "value": "Teclado"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "56bb15d5-bb78-46db-afa3-f63075b01199",
+            "colId": "21dd1d2c-921f-4476-b451-bf7d71f59f4a",
+            "containerId": "2f818340-9c6c-43ed-a282-e06c052bbd06",
+            "name": "SAVE_CATEGORY",
+            "url": "/category/save",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-02-22T23:30:32.500Z",
+            "modified": "2024-02-22T23:31:22.777Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Industrial"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Producto industrial"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a11afd23-9317-43e4-94b9-38e536fe3e01",
+            "colId": "21dd1d2c-921f-4476-b451-bf7d71f59f4a",
+            "containerId": "2f818340-9c6c-43ed-a282-e06c052bbd06",
+            "name": "GET_CATEGORY",
+            "url": "/category/get",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-02-22T23:32:05.156Z",
+            "modified": "2024-02-22T23:32:18.884Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ec83f617-8926-4df1-948b-954d88919210",
+            "colId": "21dd1d2c-921f-4476-b451-bf7d71f59f4a",
+            "containerId": "2f818340-9c6c-43ed-a282-e06c052bbd06",
+            "name": "UPDATE_CATEGORY",
+            "url": "/category/update/65d7d94a5c293c279ce577fe",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-02-22T23:32:39.997Z",
+            "modified": "2024-02-22T23:34:22.544Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "description",
+                        "value": "Producto industrial para domicilio"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "ad8a8684-b42e-4f0d-bda4-be12a657c1a4",
+            "colId": "21dd1d2c-921f-4476-b451-bf7d71f59f4a",
+            "containerId": "2f818340-9c6c-43ed-a282-e06c052bbd06",
+            "name": "DELETE_CATEGORY",
+            "url": "/category/deleteCategory/65d6e8267d8c757f5db00af4",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-02-22T23:34:38.959Z",
+            "modified": "2024-02-23T01:45:19.034Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "372cd415-62bf-4d17-8eaf-c5ad3058efae",
+            "colId": "21dd1d2c-921f-4476-b451-bf7d71f59f4a",
+            "containerId": "2f818340-9c6c-43ed-a282-e06c052bbd06",
+            "name": "SEARCH_CATEGORY",
+            "url": "/category/search",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-02-22T23:35:11.925Z",
+            "modified": "2024-02-22T23:35:49.630Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "search",
+                        "value": "Electronico"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3d53faff-1a7f-40ec-afa3-a9bc818de19b",
+            "colId": "21dd1d2c-921f-4476-b451-bf7d71f59f4a",
+            "containerId": "4e468d1e-4f4a-41a9-8723-222e7760d703",
+            "name": "GET_OFFSTOCK",
+            "url": "/product/getOfStock",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-02-23T00:17:23.279Z",
+            "modified": "2024-02-23T00:20:17.612Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656"
+        }
+    }
+}
